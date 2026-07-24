@@ -1,0 +1,6 @@
+﻿ID;Client;Email;Montant (€);Date;Produit;Référence
+1;SARL Dupont;contact@dupont.fr;1250,00;2026-07-10;Facture PRO;F-2026-001
+7;Bio Santé;admin@biosante.fr;175,50;2026-07-07;Fournitures médicales;F-2026-007
+8;Smart Home;facture@smarthome.com;985,00;2026-07-14;Domotique;F-2026-008
+9;Cabinet Conseil;compta@cabinet-conseil.fr;5600,00;2026-07-06;Consulting stratégique;F-2026-009
+10;Artisan Boulanger;boulangerie@artisan.fr;320,00;2026-07-15;Équipement cuisine;F-2026-010

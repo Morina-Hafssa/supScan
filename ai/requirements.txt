@@ -1,0 +1,11 @@
+flask
+python-dotenv
+
+google-genai
+
+paddleocr
+paddlepaddle
+
+opencv-python
+numpy
+Pillow

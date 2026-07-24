@@ -1,0 +1,138 @@
+[
+  {
+    "id": 2,
+    "annotations": [
+      {
+        "id": 8,
+        "completed_by": 1,
+        "result": [
+          {
+            "original_width": 1240,
+            "original_height": 1755,
+            "image_rotation": 0,
+            "value": {
+              "x": 23.698446622203264,
+              "y": 12.558151201509421,
+              "width": 17.77383496665245,
+              "height": 3.9276522276325814,
+              "rotation": 0,
+              "rectanglelabels": ["Vendor"]
+            },
+            "id": "CYlXOMWwLP",
+            "from_name": "label",
+            "to_name": "invoice",
+            "type": "rectanglelabels",
+            "origin": "manual"
+          },
+          {
+            "original_width": 1240,
+            "original_height": 1755,
+            "image_rotation": 0,
+            "value": {
+              "x": 78.04395847497186,
+              "y": 33.591762473173354,
+              "width": 9.581779344162442,
+              "height": 1.2403112297786976,
+              "rotation": 0,
+              "rectanglelabels": ["Invoice date"]
+            },
+            "id": "GMyYWfO_yE",
+            "from_name": "label",
+            "to_name": "invoice",
+            "type": "rectanglelabels",
+            "origin": "manual"
+          },
+          {
+            "original_width": 1240,
+            "original_height": 1755,
+            "image_rotation": 0,
+            "value": {
+              "x": 76.84456581248861,
+              "y": 16.014994059754947,
+              "width": 11.609610662318417,
+              "height": 1.4322352411162989,
+              "rotation": 0,
+              "rectanglelabels": ["Reference"]
+            },
+            "id": "hArMJapnm_",
+            "from_name": "label",
+            "to_name": "invoice",
+            "type": "rectanglelabels",
+            "origin": "manual"
+          },
+          {
+            "original_width": 1240,
+            "original_height": 1755,
+            "image_rotation": 0,
+            "value": {
+              "x": 79.08971291351837,
+              "y": 79.4401569354658,
+              "width": 6.201121449517515,
+              "height": 1.7956635835322317,
+              "rotation": 0,
+              "rectanglelabels": ["Amount"]
+            },
+            "id": "qX8d4yc-LZ",
+            "from_name": "label",
+            "to_name": "invoice",
+            "type": "rectanglelabels",
+            "origin": "manual"
+          },
+          {
+            "original_width": 1240,
+            "original_height": 1755,
+            "image_rotation": 0,
+            "value": {
+              "x": 85.38605224280307,
+              "y": 79.48421328096818,
+              "width": 1.2878740911433368,
+              "height": 1.7744043033530374,
+              "rotation": 0,
+              "rectanglelabels": ["devise"]
+            },
+            "id": "-RGcLXvgIa",
+            "from_name": "label",
+            "to_name": "invoice",
+            "type": "rectanglelabels",
+            "origin": "manual"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2026-07-15T16:52:10.598436Z",
+        "updated_at": "2026-07-15T16:52:10.598436Z",
+        "draft_created_at": "2026-07-15T16:51:57.327957Z",
+        "lead_time": 257.177,
+        "prediction": {},
+        "result_count": 5,
+        "unique_id": "abd63f6b-6e99-4c3c-bff4-3c8f5ab2da8a",
+        "import_id": null,
+        "last_action": null,
+        "bulk_created": false,
+        "task": 2,
+        "project": 2,
+        "updated_by": 1,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": null
+      }
+    ],
+    "file_upload": "32fb9f1d-Finance_App_page-0002.jpg",
+    "drafts": [],
+    "predictions": [],
+    "data": {
+      "image": "/data/upload/2/32fb9f1d-Finance_App_page-0002.jpg"
+    },
+    "meta": {},
+    "created_at": "2026-07-15T15:36:05.061471Z",
+    "updated_at": "2026-07-15T16:52:10.810546Z",
+    "allow_skip": true,
+    "inner_id": 2,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "project": 2,
+    "updated_by": 1,
+    "comment_authors": []
+  }
+]
