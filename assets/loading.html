@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading SupScan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            background: linear-gradient(145deg, #f8f9fc 0%, #eef1f6 100%);
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+            padding: 20px;
+        }
+
+        .splash-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo-wrapper img {
+            width: 140px;
+            height: 140px;
+            display: block;
+            border-radius: 50%;
+            object-fit: contain;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 20px 60px rgba(120, 0, 0, 0.15);
+        }
+
+        .app-title {
+            font-size: 32px;
+            font-weight: 800;
+            color: #1a1a2e;
+            margin-top: 20px;
+            letter-spacing: -0.5px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .app-title span {
+            color: #780000;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            font-weight: 400;
+            color: #8a9bb0;
+            margin-top: 4px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .loader-container {
+            margin-top: 35px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .loader {
+            width: 50px;
+            height: 50px;
+            border: 4px solid rgba(120, 0, 0, 0.1);
+            border-top-color: #780000;
+            border-radius: 50%;
+            animation: spin 0.9s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .loader-text {
+            font-size: 13px;
+            font-weight: 500;
+            color: #6b7a8f;
+            letter-spacing: 1px;
+        }
+
+        .version-badge {
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            font-size: 11px;
+            font-weight: 500;
+            color: #b0c0d0;
+            background: rgba(255, 255, 255, 0.6);
+            padding: 4px 14px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            letter-spacing: 0.5px;
+        }
+
+        .version-badge i {
+            font-style: normal;
+            color: #780000;
+            font-weight: 700;
+        }
+
+        @media (max-width: 480px) {
+            .logo-wrapper img {
+                width: 100px;
+                height: 100px;
+                padding: 15px;
+            }
+
+            .app-title {
+                font-size: 24px;
+            }
+
+            .subtitle {
+                font-size: 11px;
+                letter-spacing: 1.5px;
+            }
+
+            .loader {
+                width: 40px;
+                height: 40px;
+                border-width: 3px;
+            }
+
+            .version-badge {
+                bottom: 15px;
+                right: 15px;
+                font-size: 9px;
+                padding: 3px 10px;
+            }
+        }
+
+        @media (max-width: 380px) {
+            .logo-wrapper img {
+                width: 80px;
+                height: 80px;
+                padding: 12px;
+            }
+
+            .app-title {
+                font-size: 20px;
+            }
+
+            .loader-container {
+                margin-top: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="splash-container">
+        <div class="logo-wrapper">
+            <img src="SupScan.png" alt="SupScan Logo">
+        </div>
+
+        <div class="app-title">
+            SupScan
+        </div>
+
+        <div class="subtitle">Traitement Intelligent des Factures</div>
+
+        <div class="loader-container">
+            <div class="loader"></div>
+            <div class="loader-text">Démarrage de l'application...</div>
+        </div>
+    </div>
+
+    <div class="version-badge">
+        <i>v</i> 1.0.0
+    </div>
+
+</body>
+</html>

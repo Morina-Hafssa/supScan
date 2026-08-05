@@ -1,0 +1,61 @@
+{
+  "name": "supscan",
+  "version": "1.0.0",
+  "main": "main.js",
+  "compression": "normal",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.supscan.app",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "../frontend/**/*",
+      "../runtime/**/*",
+      "../assets/**/*",
+      "../ai/SupScanAPI.exe"
+    ],
+    "extraResources": [
+      {
+        "from": "../frontend",
+        "to": "frontend"
+      },
+      {
+        "from": "../runtime",
+        "to": "runtime"
+      },
+      {
+        "from": "../assets",
+        "to": "assets"
+      },
+      {
+        "from": "../ai/dist/SupScanAPI",
+        "to": "ai/dist/SupScanAPI"
+      },
+      {
+        "from": "../ai/.env",
+        "to": "ai/dist/SupScanAPI/.env"
+      },
+      {
+        "from": "../ai/poppler",
+        "to": "ai/dist/SupScanAPI/poppler"
+      }
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "../assets/SupScan.ico"
+    }
+  },
+  "devDependencies": {
+    "electron": "^43.3.0",
+    "electron-builder": "^26.15.3"
+  },
+  "dependencies": {
+    "sqlite3": "^6.0.1",
+    "xlsx": "^0.18.5"
+  }
+}

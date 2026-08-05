@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>About SupScan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding: 40px 30px;
+            background: #f8f9fa;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .about-container {
+            max-width: 420px;
+            width: 100%;
+        }
+
+        .logo-wrapper {
+            margin-bottom: 10px;
+        }
+
+        .logo-wrapper img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: contain;
+            background: white;
+            padding: 15px;
+            box-shadow: 0 10px 30px rgba(120, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #780000;
+            font-size: 32px;
+            font-weight: 700;
+            margin: 10px 0 5px 0;
+        }
+
+        .version {
+            color: #7f8c8d;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid #e9ecef;
+            margin: 20px 0;
+        }
+
+        .developer-section {
+            margin: 15px 0;
+        }
+
+        .developer-label {
+            color: #7f8c8d;
+            font-size: 13px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .developer-name {
+            display: inline-block;
+            font-size: 18px;
+            font-weight: 600;
+            color: #2c3e50;
+            padding: 4px 0;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .developer-name:hover {
+            color: #780000;
+            transform: translateX(2px);
+        }
+
+        .developer-name .email-icon {
+            font-size: 14px;
+            margin-left: 6px;
+            opacity: 0.5;
+            transition: opacity 0.2s ease;
+        }
+
+        .developer-name:hover .email-icon {
+            opacity: 1;
+        }
+
+        .developer-name:active {
+            transform: scale(0.95);
+        }
+
+
+
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #a0aec0;
+        }
+
+        /* Tooltip style */
+        .email-tooltip {
+            display: none;
+            position: absolute;
+            background: #2c3e50;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 400;
+            white-space: nowrap;
+            pointer-events: none;
+            transform: translateY(-30px);
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .developer-name-wrapper {
+            position: relative;
+            display: inline-block;
+        }
+
+        .developer-name-wrapper:hover .email-tooltip {
+            display: block;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 25px 20px;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+            .developer-name {
+                font-size: 16px;
+            }
+
+            .logo-wrapper img {
+                width: 80px;
+                height: 80px;
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="about-container">
+    <div class="logo-wrapper">
+        <img src="SupScan.png" alt="SupScan Logo">
+    </div>
+
+    <h1>SupScan</h1>
+    <div class="version">Version 1.0.0</div>
+
+    <hr class="divider">
+
+    <div class="developer-section">
+        <div class="developer-label">Developed by</div>
+
+        <div class="developer-name-wrapper">
+            <a href="mailto:mourino.hafsa@gmail.com?subject=SupScan%20Feedback" class="developer-name">
+                Hafsa Loukili Mourino
+                <span class="email-icon">✉</span>
+            </a>
+            <span class="email-tooltip">Click to email</span>
+        </div>
+        <br>
+        <div class="developer-name-wrapper">
+            
+            <a href="mailto:ayahachimi07@gmail.com?subject=SupScan%20Feedback" class="developer-name">
+                Aya Hachimi
+                <span class="email-icon">✉</span>
+            </a>
+            <span class="email-tooltip">Click to email</span>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        &copy; 2026 SupScan. All rights reserved.
+    </div>
+</div>
+
+</body>
+</html>

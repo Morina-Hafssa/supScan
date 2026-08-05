@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "get-port": "^7.2.0",
+    "sqlite3": "^6.0.1"
+  },
+  "devDependencies": {
+    "electron": "^43.3.0"
+  }
+}
